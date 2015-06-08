@@ -10,6 +10,6 @@
 angular.module('monopolyTicketTrackerApp')
     .factory('localStorage', ['$window', function(win) {
     	return function() {
-    		win.alert('triggered alert');
+    		win.alert('triggered alert from localStorage.js');
     	};
     }]);
