@@ -1,0 +1,69 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+  	font-size: 16px;
+}
+.header,
+.container{
+	margin-bottom:2rem;
+}
+.container{
+	@include clearfix;	
+}
+
+.ticket{
+	float:left;
+	clear:left;
+	padding:1rem;
+	background-image: url(/images/error.jpg);
+	background-size: contain;
+	background-color:#CCC;
+	background-color:transparent;
+	border:1px solid #444;
+	border-bottom-width:0px;
+	&:last-of-type{border-bottom-width:1px}
+}
+
+//group styling
+.A,.E,.J,.N,.R,.V,.Z{
+	background-color:#2EE;
+}
+.B,.F,.K,.O,.S,.W{
+	background-color:#6A0;
+}
+.C,.G,.L,.P,.T,.X{
+	background-color:#F0F;
+}
+.D,.H,.M,.Q,.U,.Y{
+	background-color:#FF0;
+}
+.A,.E,.J,.N,.R,.V,.Z,.B,.F,.K,.O,.S,.W,.C,.G,.L,.P,.T,.X,.D,.H,.M,.Q,.U,.Y{
+	background-image:none;
+}
+
+.number,
+.group,
+.count {
+	min-width: 45px;
+	float:left;
+}
+
+.number {font-weight:700;}
+
+.group,
+.count {
+	text-align: center;
+}
+
+.controls{
+	min-width:90px;
+	float:left;
+	text-align:right;
+}
