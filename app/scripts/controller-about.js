@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name monopolyTicketTrackerApp.controller:AboutCtrl
+ * @name monopolyTicketTrackerApp.controller:about
  * @description
- * # AboutCtrl
+ * # about
  * Controller of the monopolyTicketTrackerApp
  */
 angular.module('monopolyTicketTrackerApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('about', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

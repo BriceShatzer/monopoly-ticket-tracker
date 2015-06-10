@@ -4,11 +4,11 @@
  * @ngdoc function
  * @name monopolyTicketTrackerApp.service:tickets
  * @description
- * # Tickets
+ * # tickets
  * Service of the monopolyTicketTrackerApp
  */
 angular.module('monopolyTicketTrackerApp')
-    .factory('tickets', ['localStorage', function(localStorage) {
+    .factory('tickets', ['localStorage', 'defaultTicketInfo', function(localStorage,defaultTicketInfo) {
 		var tickets = {}; //what the service will ultimately return;
 		tickets.catalog = undefined;
 
@@ -26,6 +26,8 @@ angular.module('monopolyTicketTrackerApp')
 		};
 
     	var firebase; // saved info on firebase //new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com/");
+
+    	/* --moved into constant-ticketInfo.js
     	var defaultTicketInfo = [// default data that is used if nothing is found/available from firebase
 			{
 				number:101,
@@ -483,7 +485,8 @@ angular.module('monopolyTicketTrackerApp')
 				number:214,
 				count:0
 			}
-		];	
+		];
+		*/	
 
 		function getGroup(number){
             var assignedGroup;

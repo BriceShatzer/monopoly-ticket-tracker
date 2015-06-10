@@ -2,14 +2,13 @@
 
 /**
  * @ngdoc function
- * @name monopolyTicketTrackerApp.controller:MainCtrl
+ * @name monopolyTicketTrackerApp.controller:main
  * @description
- * # MainCtrl
+ * # main
  * Controller of the monopolyTicketTrackerApp
  */
 angular.module('monopolyTicketTrackerApp')
-  .controller('MainCtrl', 
-  	function ($scope, tickets) {
+  .controller('main', function ($scope, tickets) {
 	    $scope.tickets = tickets;
   	}
 );
